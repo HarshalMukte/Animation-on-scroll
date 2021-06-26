@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Roboto:wght@100;300;400&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 500px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px auto;
+    background-color: rgb(240, 196, 203);
+    position: relative;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .main-photo{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        z-index: -1;
+    
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    h1{
+        font-size: 100px;
+        
+    }
+}
+
+section{
+    position: fixed;
+    left: 20%;
+    top: -50%;
+    transform: translateY(-50%);
+}
+
+article{
+    p{
+       padding: 10px 0;
+       font-weight: 300;
+    }
+
+    img{
+        width: 70%;
+        border: 1em solid #fff;
+        border-bottom: 4em solid #fff;
+        border-radius: .25em;
+        box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+        margin: 10px auto 70px;
+        transform: translateY(4em) rotateZ(-5deg);
+
+        &:nth-of-type(odd){
+            transform: translateY(4em) rotateZ(5deg);
+
+        }
+    }
+    h2,h3{
+        margin: 20px auto;
+    }
+
+    p a{
+        color: rgb(143, 106, 106);
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+}
+
+@media (max-width: 600px){
+    body{
+        width: 450px;
+    }
+}
+@media (max-width: 500px){
+    body{
+        width: 400px;
+    }
+}
+@media (max-width: 450px){
+    body{
+        width: 350px;
+    }
+}
+@media (max-width: 400px){
+    body{
+        width: 320px;
+    }
+}
+@media (max-width: 350px){
+    body{
+        width: 280px;
+    }
+}
+
+
+

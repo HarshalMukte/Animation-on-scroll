@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Roboto:wght@100;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 500px;
+  font-family: 'Baloo Tammudu 2', cursive;
+  font-family: 'Roboto', sans-serif;
+  margin: 5px auto;
+  background-color: #f0c4cb;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .main-photo {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  z-index: -1;
+}
+
+header .main-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 100px;
+}
+
+section {
+  position: fixed;
+  left: 20%;
+  top: -50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+article p {
+  padding: 10px 0;
+  font-weight: 300;
+}
+
+article img {
+  width: 70%;
+  border: 1em solid #fff;
+  border-bottom: 4em solid #fff;
+  border-radius: .25em;
+  -webkit-box-shadow: 1em 1em 2em 0.25em rgba(0, 0, 0, 0.2);
+          box-shadow: 1em 1em 2em 0.25em rgba(0, 0, 0, 0.2);
+  margin: 10px auto 70px;
+  -webkit-transform: translateY(4em) rotateZ(-5deg);
+          transform: translateY(4em) rotateZ(-5deg);
+}
+
+article img:nth-of-type(odd) {
+  -webkit-transform: translateY(4em) rotateZ(5deg);
+          transform: translateY(4em) rotateZ(5deg);
+}
+
+article h2, article h3 {
+  margin: 20px auto;
+}
+
+article p a {
+  color: #8f6a6a;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    width: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    width: 320px;
+  }
+}
+
+@media (max-width: 350px) {
+  body {
+    width: 280px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
